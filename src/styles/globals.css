@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  color-scheme: dark;
+}
+
+#root {
+  height: 100%;
+}
+
+@layer base {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+    appearance: none;
+  }
+
+  input[type="date"] {
+    color-scheme: dark;
+  }
+}
