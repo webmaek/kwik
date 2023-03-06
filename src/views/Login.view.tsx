@@ -4,7 +4,10 @@ import { ClientRoutes } from "~/utils/constants/routes";
 
 export function LoginView() {
   const googleLogin = () => {
-    void signIn("google", { redirect: false, callbackUrl: ClientRoutes.HOME });
+    void signIn("google", {
+      redirect: false,
+      callbackUrl: ClientRoutes.DASHBOARD,
+    });
   };
 
   return (
