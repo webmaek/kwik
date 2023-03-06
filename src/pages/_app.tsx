@@ -5,6 +5,8 @@ import NiceModal from "@ebay/nice-modal-react";
 import { ToastContainer } from "react-toastify";
 import { Poppins } from "@next/font/google";
 import Head from "next/head";
+import "@tremor/react/dist/esm/tremor.css";
+import "react-toastify/dist/ReactToastify.css";
 
 import { api } from "~/utils/api";
 
