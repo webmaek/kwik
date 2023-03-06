@@ -5,7 +5,7 @@ import { ClientRoutes } from "~/utils/constants/routes";
 export function LoginView() {
   const googleLogin = () => {
     void signIn("google", {
-      redirect: false,
+      redirect: true,
       callbackUrl: ClientRoutes.DASHBOARD,
     });
   };
