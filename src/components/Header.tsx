@@ -3,13 +3,7 @@ import { useRouter } from "next/router";
 
 import { MenuDropdown } from "~/components/MenuDropdown";
 
-export function Header({
-  title,
-  showBackUrl,
-}: {
-  title: string;
-  showBackUrl: boolean;
-}) {
+export function Header({ showBackUrl }: { showBackUrl: boolean }) {
   const router = useRouter();
 
   return (
@@ -25,7 +19,7 @@ export function Header({
             </button>
           </div>
         )}
-        <h1 className="text-3xl font-semibold text-white">{title}</h1>
+        <img src="/logo-no-background.png" alt="Logo" className="w-42 h-14" />
       </div>
 
       <div className="flex items-center">
