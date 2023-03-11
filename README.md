@@ -1,28 +1,57 @@
-# Create T3 App
+# Kwik App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Kwik is a user-friendly app designed to help you manage your budget, incomes, and expenses with ease. With Kwik, you can track your finances, set budgets, and monitor your spending habits to help you achieve your financial goals. The app provides a simple interface that allows you to easily input your income and expenses.Kwik is a convenient and efficient way to take control of your money and make better financial decisions.
 
-## What's next? How do I make an app with this?
+## Stack
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Next.js
+- Tailwindcss
+- Prisma
+- Zod
+- Next auth
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+# Getting started
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+First, run command to install all dependencies
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Env variables
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+```bash
+cp .env.example .env
+```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+Now fill out empty env variables, and then run
 
-## How do I deploy this?
+```bash
+npx prisma db push
+```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+To update prisma schema with the database
+
+## Development
+
+To run dev, run command
+
+```bash
+npm run dev
+```
+
+## Build
+
+To run build, run command
+
+```bash
+npm run build
+```
+
+## Start
+
+To run start, run command
+
+```bash
+npm run start
+```
